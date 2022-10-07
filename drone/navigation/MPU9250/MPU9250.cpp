@@ -1,5 +1,12 @@
 #include "MPU9250.hpp"
+#include <stdlib.h>
+#include <stdint.h>
+#include <string.h>
+#include <errno.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
 #include <linux/i2c-dev.h>
+#include <linux/i2c.h>
 #include <fcntl.h>
 #include <stdio.h>
 #include <unistd.h>

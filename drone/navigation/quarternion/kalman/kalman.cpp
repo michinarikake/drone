@@ -262,19 +262,19 @@ void Kalman::estimate_covariance_estimated_matrix()
 */
 void Kalman::update_kalman_gain_matrix()
 {
-    std::cout << "start update_kalman_gain_matrix" << "\n";
-    std::cout << "covariance_matrix" << "\n";
-    covariance_matrix.show();
-    std::cout << "observation_eq_matrix" << "\n";
-    observation_eq_matrix.show();
-    std::cout << "covariance_estimated_matrix" << "\n";
-    covariance_estimated_matrix.show();
-    std::cout << "noise_observation_matrix" << "\n";
-    noise_observation_matrix.show();
-    (observation_eq_matrix * covariance_estimated_matrix).show();
-    std::cout << "6*6行列" << "\n";
-    (observation_eq_matrix * covariance_estimated_matrix * observation_eq_matrix.transpose() 
-    + noise_observation_matrix).inverse().show();
+    // std::cout << "start update_kalman_gain_matrix" << "\n";
+    // std::cout << "covariance_matrix" << "\n";
+    // covariance_matrix.show();
+    // std::cout << "observation_eq_matrix" << "\n";
+    // observation_eq_matrix.show();
+    // std::cout << "covariance_estimated_matrix" << "\n";
+    // covariance_estimated_matrix.show();
+    // std::cout << "noise_observation_matrix" << "\n";
+    // noise_observation_matrix.show();
+    // (observation_eq_matrix * covariance_estimated_matrix).show();
+    // std::cout << "6*6行列" << "\n";
+    // (observation_eq_matrix * covariance_estimated_matrix * observation_eq_matrix.transpose() 
+    // + noise_observation_matrix).inverse().show();
 
     kalman_gain_matrix =
     (covariance_matrix 
